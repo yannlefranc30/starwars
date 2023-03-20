@@ -1,0 +1,74 @@
+
+/* fond de la page en noir */
+body {
+  background: black;
+   background-image: url("https://ds.static.rtbf.be/article/image/1248x702/8/6/5/a7a616926c369a3831e6ba7c111de5ec-1524550765.jpg");
+}
+
+/* animation de l'étoile de la mort */
+
+img {
+  animation-duration: 5s;
+  animation-name: glissement;
+  animation-iteration-count: infinite;
+}
+
+
+.aller {
+  animation-direction: normal;
+}
+
+.retour {
+  animation-direction: reverse;
+}
+
+/* Les keyframes permettent de définir les étapes qui composent la séquence d'une animation */
+
+@keyframes glissement {
+  from {
+    margin-left: 15px;
+    width: 300px;
+  }
+  to {
+    width: 150px;
+    margin-top: 320px;
+  }
+}
+
+.star {
+
+/* permet de definir la postion d'un élément par absolute */
+    position: absolute;
+    top: 50%;
+    transform: translate(80%,-50%);
+    font-family: verdana;
+    font-size: 35px;
+    font-weight: 12px;
+    color: #c1c1c1;
+    text-shadow: 1px 1px 1px #fff9f9, 1px 2px 1px #fff, 1px 3px 1px #fff, 1px 4px 1px #fff, 1px 5px 1px #fff, 1px 6px 1px #fff, 1px 7px 1px #fff, 1px 8px 1px #2a2929, 1px 9px 1px #fff, 1px 10px 1px #fff, 1px 18px 6px rgb(16 16 16 / 40%), 1px 22px 10px rgb(16 16 16 / 20%), 1px 25px 35px rgb(16 16 16 / 20%), 1px 30px 60px rgb(16 16 16 / 40%);
+    margin-right: 200px;
+    margin-top: 200px;
+}
+
+star {
+    position: absolute;
+    top: 70%;
+    right: 15%;
+    transform: translate(50%,-50%);
+    text-transform: uppercase;
+    font-family: verdana;
+    font-size: 55px;
+    font-weight: 700;
+    color: #efeeee;
+    text-shadow: 1px 1px 1px #fff, 1px 2px 1px #fff, 1px 3px 1px #fff, 1px 4px 1px #fff, 1px 5px 1px #382db1, 1px 6px 1px #fff, 1px 7px 1px #fff, 1px 8px 1px #fff, 1px 9px 1px #fff, 1px 10px 1px #fff, 1px 18px 6px rgb(16 16 16 / 40%), 1px 22px 10px rgb(16 16 16 / 20%), 1px 25px 35px rgb(16 16 16 / 20%), 1px 30px 60px rgb(16 16 16 / 40%);
+}
+
+span.star {
+    animation: initial;
+    animation-duration: inherit;
+    touch-action: manipulation;
+    animation: auto;
+}
+
+span.star {}
+
